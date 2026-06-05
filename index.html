@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio | [Họ và Tên]</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0a0a0f;
@@ -13,8 +13,8 @@
     --accent: #00ff9d;
     --accent2: #00b8ff;
     --accent3: #ff6b35;
-    --text: #e0e0ff;
-    --text-muted: #6b6b9a;
+    --text: #f2f2ff;
+    --text-muted: #b7b7dc;
     --border: #1e1e3a;
     --glow: 0 0 20px rgba(0,255,157,0.15);
   }
@@ -27,7 +27,8 @@
     background: var(--bg);
     color: var(--text);
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
     line-height: 1.7;
     overflow-x: hidden;
   }
@@ -41,8 +42,8 @@
       0deg,
       transparent,
       transparent 2px,
-      rgba(0,0,0,0.03) 2px,
-      rgba(0,0,0,0.03) 4px
+      rgba(0,0,0,0.01) 2px,
+      rgba(0,0,0,0.01) 4px
     );
     pointer-events: none;
     z-index: 9999;
@@ -64,7 +65,8 @@
 
   .nav-logo {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 700;
     color: var(--accent);
     letter-spacing: 2px;
   }
@@ -75,7 +77,8 @@
 
   .nav-links a {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--text-muted);
     text-decoration: none;
     letter-spacing: 1px;
@@ -114,7 +117,8 @@
 
   .hero-tag {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--accent);
     letter-spacing: 3px;
     margin-bottom: 1.5rem;
@@ -131,11 +135,11 @@
   }
 
   h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 600;
+    font-size: 4.2rem;
+    font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1rem;
-    letter-spacing: -1px;
+    letter-spacing: 0;
   }
 
   h1 .name-accent {
@@ -145,7 +149,8 @@
 
   .hero-desc {
     color: var(--text-muted);
-    font-size: 1rem;
+    font-size: 1.08rem;
+    font-weight: 600;
     margin-bottom: 2rem;
     max-width: 420px;
   }
@@ -158,7 +163,7 @@
 
   .btn-primary {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1px;
     padding: 0.75rem 1.75rem;
     background: var(--accent);
@@ -178,7 +183,7 @@
 
   .btn-ghost {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1px;
     padding: 0.75rem 1.75rem;
     background: transparent;
@@ -186,6 +191,7 @@
     border: 1px solid var(--accent2);
     cursor: pointer;
     text-decoration: none;
+    font-weight: 700;
     transition: all 0.2s;
   }
 
@@ -200,7 +206,8 @@
     border-radius: 8px;
     overflow: hidden;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .terminal-bar {
@@ -218,7 +225,8 @@
   .dot-green { background: #28c840; }
 
   .terminal-title {
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--text-muted);
     margin-left: auto;
     margin-right: auto;
@@ -259,19 +267,20 @@
 
   .section-tag {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--accent);
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
   }
 
   h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    font-size: 2.15rem;
+    font-weight: 700;
+    letter-spacing: 0;
   }
 
-  h2 .dim { color: var(--text-muted); font-weight: 300; }
+  h2 .dim { color: var(--text-muted); font-weight: 600; }
 
   /* ABOUT */
   .about-grid {
@@ -284,12 +293,13 @@
   .about-text p {
     color: var(--text-muted);
     margin-bottom: 1rem;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    font-weight: 500;
   }
 
   .about-text p strong {
     color: var(--text);
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .stats-grid {
@@ -324,7 +334,8 @@
   }
 
   .stat-label {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--text-muted);
     margin-top: 0.25rem;
     letter-spacing: 0.5px;
@@ -373,29 +384,32 @@
 
   .project-id {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 700;
     color: var(--text-muted);
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
   }
 
   .project-title {
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.22rem;
+    font-weight: 700;
     color: var(--text);
     margin-bottom: 0.5rem;
   }
 
   .project-course {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--accent2);
     margin-bottom: 0.75rem;
     letter-spacing: 0.5px;
   }
 
   .project-desc {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -409,7 +423,8 @@
 
   .tag {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 700;
     padding: 2px 8px;
     border: 1px solid var(--border);
     color: var(--text-muted);
@@ -425,7 +440,8 @@
     align-items: center;
     gap: 0.35rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--accent);
     text-decoration: none;
     margin-top: 0.75rem;
@@ -448,7 +464,8 @@
 
   .skill-group h3 {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--accent);
     letter-spacing: 2px;
     margin-bottom: 1rem;
@@ -462,7 +479,8 @@
     align-items: center;
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(30,30,58,0.5);
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   .skill-item:last-child { border-bottom: none; }
@@ -500,13 +518,14 @@
 
   .conclusion-card h3 {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
   .conclusion-card p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    font-weight: 500;
     margin-bottom: 1rem;
     max-width: 640px;
   }
@@ -522,7 +541,8 @@
 
   .conclusion-meta-item {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
   }
 
   .conclusion-meta-item span {
@@ -533,7 +553,7 @@
 
   .conclusion-meta-item strong {
     color: var(--accent2);
-    font-weight: 500;
+    font-weight: 700;
   }
 
   /* FOOTER */
@@ -542,7 +562,8 @@
     padding: 2rem;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--text-muted);
   }
 
@@ -579,6 +600,7 @@
     .hero-grid, .about-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
     .hero { padding-top: 5rem; }
+    h1 { font-size: 3rem; }
     .stats-grid { grid-template-columns: 1fr 1fr; }
   }
 
@@ -719,7 +741,7 @@
         <span class="tag">Windows/Linux</span>
         <span class="tag">Naming Convention</span>
       </div>
-      <a href="#" class="project-link">Xem chi tiết</a>
+      <a href="BaiTapTuan1.pdf" class="project-link">Xem chi tiết</a>
     </div>
 
     <!-- BT2 -->
@@ -736,7 +758,7 @@
         <span class="tag">Google Scholar</span>
         <span class="tag">CRAAP Test</span>
       </div>
-      <a href="#" class="project-link">Xem chi tiết</a>
+      <a href="Tuan2_BaiTap_TaiLieuHocThuat_LLM_Cybersecurity.pdf" class="project-link">Xem chi tiết</a>
     </div>
 
     <!-- BT3 -->
@@ -753,7 +775,7 @@
         <span class="tag">ChatGPT</span>
         <span class="tag">AI Output</span>
       </div>
-      <a href="#" class="project-link">Xem chi tiết</a>
+      <a href="Tuan3_bao_cao_prompt_engineering.pdf" class="project-link">Xem chi tiết</a>
     </div>
 
     <!-- BT4 -->
@@ -770,7 +792,7 @@
         <span class="tag blue">Trello / Notion</span>
         <span class="tag">Teamwork</span>
       </div>
-      <a href="#" class="project-link">Xem chi tiết</a>
+      <a href="Tuan4_BaoCaoCaNhan_LeAnhQuang.pdf" class="project-link">Xem chi tiết</a>
     </div>
 
     <!-- BT5 -->
@@ -787,7 +809,7 @@
         <span class="tag">Content Creation</span>
         <span class="tag">DALL-E / Midjourney</span>
       </div>
-      <a href="#" class="project-link">Xem chi tiết</a>
+      <a href="Tuan5_Bao_cao_AI_Tao_sinh_Infographic.pdf" class="project-link">Xem chi tiết</a>
     </div>
 
     <!-- BT6 -->
@@ -804,7 +826,7 @@
         <span class="tag">Academic Integrity</span>
         <span class="tag blue">Research-Based</span>
       </div>
-      <a href="#" class="project-link">Xem chi tiết</a>
+      <a href="Tuan6_Bao_cao_Su_dung_AI_co_trach_nhiem.pdf" class="project-link">Xem chi tiết</a>
     </div>
 
   </div>
